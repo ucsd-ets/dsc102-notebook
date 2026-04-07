@@ -14,7 +14,7 @@ LABEL maintainer="UC San Diego ITS/ETS <ets-consult@ucsd.edu>"
 USER root
 
 RUN apt update && \
-    apt-get -y install linux-tools-common linux-tools-generic
+    apt-get -y install linux-tools-common linux-tools-generic linux-tools linux-cloud-tools
 
 # 3) install packages using notebook user
 USER jovyan
