@@ -18,7 +18,7 @@ RUN apt update && \
       linux-tools-common \
       linux-tools-generic \
       linux-cloud-tools-generic && \
-    ln -s /usr/lib/linux-tools/3.13.0-141-generic/perf /usr/bin/perf
+    ln -s -f /usr/lib/linux-tools-5.15.0-174/perf /usr/bin/perf
 
 # 3) install packages using notebook user
 USER jovyan
